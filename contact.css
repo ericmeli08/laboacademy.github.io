@@ -1,0 +1,279 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(violet,skyblue);
+}
+header
+{
+  background: #222;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 10%;
+}
+.menu
+{
+  display: flex;
+  align-items: center;
+}
+.menu li
+{
+  margin: 0 15px;
+  list-style-type: none;
+}
+.menu > :last-child a
+{
+  background:#fff;  
+  color: #222;
+  box-shadow: 5px 5px 10px skyblue,-5px -5px 10px skyblue,5px -5px 10px skyblue,-5px 5px 10px skyblue
+}
+.menu li a 
+{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.menu li a:hover
+{
+  background:#fff;  
+  color: #222;
+  box-shadow: 5px 5px 10px skyblue,-5px -5px 10px skyblue,5px -5px 10px skyblue,-5px 5px 10px skyblue
+}
+
+/* la barre */
+
+.barre 
+{display: none;}
+
+/* fin de la barre */
+/* main part */
+
+main
+{
+    width: calc(100vw - 20px);
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+main .contener
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0 100px 0;
+    width: 50%;
+    height: auto ;
+    column-gap: 50px;
+    border-radius: 15px;
+    background-color: rgba(0, 255, 255, 0.666);
+    color: #222;
+    box-shadow: 0 8px 24px rgba(34, 34, 34, 0.804), 0 8px 8px rgba(34, 34, 34, 0.815);
+
+}
+main .contener .welcome
+{
+    color: #222;
+    width: 450px;
+    text-align: center;
+    font-size: 20px;
+}
+main .contener .welcome span
+{
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+main form 
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-transform: uppercase;
+    background-color: #fff;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0px 30px;
+    font-weight: bold;
+    row-gap: 10px;
+}
+textarea , main form > :first-child
+{
+    grid-column: span 2;
+    text-align: center;
+}
+main  input[type="submit"], main  input[type="reset"]
+{
+    margin-top: 10px;
+    margin-right: 30px;
+    border-radius: 40%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    outline: none;
+}
+
+main  input[type="submit"]:hover, main  input[type="reset"]:hover
+{
+    box-shadow: 5px 5px 10px skyblue,-5px -5px 10px skyblue,5px -5px 10px skyblue,-5px 5px 10px skyblue ;
+    transform: scale(1.1);  
+}
+main input
+{
+    padding: 5px;
+    border: none;
+    background-color: aqua;
+}
+main form > :first-child
+{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*footer part */
+
+footer
+{
+   padding:10px 10%;
+   display: flex;
+   justify-content: space-between;
+   background-color:#556688 ;
+   color:beige ;
+}
+a
+{
+    text-decoration: none;
+}
+ footer form 
+{
+   display: grid;
+   grid-template-columns: repeat(2,50%);
+   column-gap: 40px;
+}
+
+footer .foot li
+{
+   list-style-type: none;
+   margin: 10px 0;
+}
+
+
+@media screen and (max-width: 1320px) {
+    header
+    {
+      padding: 0 5%;
+    }
+    .home
+    {
+      padding-left: 20px;
+    }
+    .info
+    {
+      transform: translate(-35px,-35px);
+    }
+    .info .text
+    {
+      display: none;
+    }
+  } 
+  @media screen and (max-width: 1024px) {
+    header
+    {
+      padding: 0 3%;
+    }
+    .home
+    {
+      padding-left: 20px;
+      transform: scale(0.9);
+    }
+  } 
+  @media screen and (max-width: 820px) {
+     main .contener
+     {
+        flex-direction: column;
+        width: 90%;
+        height: 850px;
+        margin: 200px 0 100px 0;
+     }
+     main .contener form 
+     {
+
+        width: 100%;
+        height: 650px;
+        border-radius: 0 0 15px 15px ;
+     }
+    .barre
+    {
+      display: block;
+      cursor: pointer;
+    }
+    .barre .line
+    {
+      width: 20px;
+      height: 2px;
+      background-color: #fefefe;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+    .line22
+    {
+      display: none;
+    }
+    .line11
+    {
+     transform: translateY(6px);
+    }
+    .line33
+    {
+      transform: rotate(-60deg);
+    }
+    .menu
+    {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: #222;
+      transition: 0.5s;
+      height: 0px;
+      flex-direction: column;
+      row-gap: 20px;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    .menu.active
+    {
+      height: 250px;  
+    }
+    .menu li 
+    {
+      opacity: 0;
+      transition: 0.5s;
+      transform: translateY(17px);
+    }
+    .menu.active li 
+    {
+      opacity: 1;
+    }
+  }

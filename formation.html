@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">LABO </a>
+        </div>
+        <div class="barre">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="nosFilieres.html">Nos Filieres</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="diplome.html">Diplome</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>formation</h1>
+        <section>
+            <div class="form"><div class="pic">photo</div><span> word</span></div>
+            <div class="form"><div class="pic">photo</div><span> excel</span></div>
+            <div class="form"><div class="pic">photo</div><span> power point</span></div>
+            <div class="form"><div class="pic">photo</div><span>java</span> </div>
+            <div class="form"><div class="pic">photo</div><span> python</span></div>
+            <div class="form"><div class="pic">photo</div><span> photoshop</span></div>
+            <div class="form"><div class="pic">photo</div><span> C/C++</span></div>
+            <div class="form"><div class="pic">photo</div><span> PHP</span></div>
+            <div class="form"><div class="pic">photo</div><span> WEB</span></div>
+            <div class="form"><div class="pic">photo</div><span> Haskell</span></div>
+            <div class="form"><div class="pic">photo</div><span> Autres</span></div>
+        </section>
+    </main>
+    <footer>
+        <ul class="foot">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="nosFilieres.html">Nos Filieres</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="diplome.html">Diplome</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">localisation : situe au Carrefour IPA a 100m du campus</a></li>
+            <li><a href="">Adresse E-Mail : www.laboacademy.com</a></li>
+            <li><a href="">Tel : 625351258</a></li>
+        </ul>
+        <form action="">
+            <label for="">nom</label>
+            <input type="text">
+            <label for="">prenom</label>
+            <input type="text">
+            <label for="">tel</label>
+            <input type="text">
+            <label for="">whatsapp</label>
+            <input type="text">
+            <label for="">service</label>
+            <input type="text">
+            <label for="">age</label>
+            <input type="text">
+            <label for="">niveau</label>
+            <input type="text">
+            <label for="">ville</label>
+            <input type="text">
+            <label for="">pays</label>
+            <input type="text">
+            <label for="">commentaire</label>
+            <label for=""></label>
+            <textarea rows="8" cols="50" placeholder="Commentaires"></textarea>
+            <div class="localisation"><input type="submit" value="Envoyer"></div>
+        </form>
+    </footer>
+    <script>
+        barre = document.querySelector(".barre");
+        menu = document.querySelector(".menu");
+        
+        barre.onclick = function () {
+            menu.classList.toggle("active");
+            line2 = document.querySelector(".barre .line2");
+                line1 = document.querySelector(".barre .line1");
+                line3 = document.querySelector(".barre .line3");
+                line2.classList.toggle("line22");
+                line1.classList.toggle("line11");
+                line3.classList.toggle("line33");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCUEIL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">LABO</a>
+        </div>
+        <div class="barre">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>        
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="nosFilieres.html">Nos Filieres</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="diplome.html">Diplome</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home">
+        <h2>BIENVENUE AU LABO ACADEMY </h2>
+        <h1> Nous suivre c'est assuere votre avenir</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta, iusto ?</p>
+        <p>reprehenderit laudantium maiores culpa cupiditate expedita voluptatem repudia</p>
+    </section>
+
+    <div class="info info1">
+        <div class="boule b1">service</div>
+        <div class="text">
+            <div>titre de presentation</div><br>
+            Lorem ipsum dolor, sit amet consectetur adipis elit. Necessitatibus magni molestias soluta numquam
+        </div>
+    </div>
+    <div class="info info2">
+        <div class="boule b2">debouches</div>
+        <div class="text">
+            <div>titre de presentation</div><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni molestias soluta numquam
+        </div>
+   </div>
+    <div class="info info3">
+        <div class="boule b3">temoignage</div>
+        <div class="text">
+            <div>titre de presentation</div><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dolor ea perspiciatis blanditiis reiciendis
+        </div>    
+    </div>
+    <svg 
+        width="1772px" height="242px">
+        <path fill-rule="evenodd"  fill="#fff"
+        d="M0.000,41.000 C146.846,13.235 296.317,-0.619 448.000,0.000 C640.185,0.784 781.814,39.675 974.000,40.000 C1148.860,40.295 1284.299,12.547 1459.000,20.000 C1564.540,24.502 1668.925,36.202 1772.000,55.000 L1772.000,242.000 L0.000,242.000 L0.000,41.000 Z"/>
+    </svg>
+
+    <script>
+        barre = document.querySelector(".barre");
+        menu = document.querySelector(".menu");
+        barre.onclick = function () {
+            menu.classList.toggle("active");
+            line2 = document.querySelector(".barre .line2");
+            line1 = document.querySelector(".barre .line1");
+            line3 = document.querySelector(".barre .line3");
+            line2.classList.toggle("line22");
+            line1.classList.toggle("line11");
+            line3.classList.toggle("line33");
+        }
+    </script>
+</body>
+</html>
